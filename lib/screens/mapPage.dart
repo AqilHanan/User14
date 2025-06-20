@@ -392,8 +392,8 @@ class _Map_PageState extends State<Map_Page> with WidgetsBindingObserver {
   @override
   Widget build(BuildContext context) {
     // Widget displayPage = Morning_Screen(updateSelectedBox: updateSelectedBox);
-    // Widget displayPage = Afternoon_Screen(updateSelectedBox: updateSelectedBox, isDarkMode: _isDarkMode);
-    Widget displayPage = now.hour > startAfternoonService ? Afternoon_Screen(updateSelectedBox: updateSelectedBox, isDarkMode: _isDarkMode,) : Morning_Screen(updateSelectedBox: updateSelectedBox);
+    Widget displayPage = Afternoon_Screen(updateSelectedBox: updateSelectedBox, isDarkMode: _isDarkMode);
+    // Widget displayPage = now.hour > startAfternoonService ? Afternoon_Screen(updateSelectedBox: updateSelectedBox, isDarkMode: _isDarkMode,) : Morning_Screen(updateSelectedBox: updateSelectedBox);
      return Scaffold(
       // body: currentLocation == null? LoadingScreen(isDarkMode: _isDarkMode) : Stack(
        body: Stack(
